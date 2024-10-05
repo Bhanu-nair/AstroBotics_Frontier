@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Venus Missions</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #1a1a2e;
+            color: #fff;
+            padding: 50px;
+            animation: fadeIn 1s ease;
+        }
+
+        h1 {
+            font-size: 50px;
+            color: #ffd700;
+            text-transform: uppercase;
+            animation: fadeIn 1s ease forwards;
+            animation-delay: 0.2s;
+        }
+        
+        .mission-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .mission {
+            background-color: #333;
+            padding: 20px;
+            border-radius: 10px;
+            transition: transform 0.3s ease, background-color 0.3s ease;
+            text-align: center;
+        }
+
+        .mission:hover {
+            background-color: #00f;
+            transform: scale(1.05);
+        }
+
+        .mission h2 {
+            font-size: 24px;
+            color: #ffd700;
+            transition: color 0.3s ease, transform 0.3s ease;
+        }
+
+        .mission h2:hover {
+            color: #00f;
+            transform: scale(0.95);
+        }
+
+        p {
+            font-size: 18px;
+            color: #ccc;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        /* Back to Home Button */
+        .back-button {
+            background-color: #00f;
+            color: white;
+            padding: 10px 20px;
+            margin: 20px auto;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            display: inline-block;
+        }
+
+        .back-button:hover {
+            background-color: #fff;
+            color: #00f;
+            transition: 0.3s;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 40px;
+            }
+            .mission h2 {
+                font-size: 20px;
+            }
+            p {
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Venus Missions</h1>
+
+    <div class="mission-container">
+        <!-- Past Missions -->
+        <div class="mission">
+            <h2>Venera 7 (1970)</h2>
+            <p>Venera 7 was the first successful lander to transmit data from the surface of Venus, providing valuable information about its atmosphere and conditions.</p>
+            <img src="images/venera.jpg" alt="Description of the image" width="220" height="100">
+            <a href="https://nssdc.gsfc.nasa.gov/planetary/venera.html" target="_blank" style="color: #4CAF50;">Venera Mission at NASA</a>
+
+
+        </div>
+
+        <!-- Current Mission -->
+        <div class="mission">
+            <h2>Akatsuki (2015-Present)</h2>
+            <p>Akatsuki is currently studying the atmosphere of Venus, focusing on its cloud dynamics and weather patterns.</p>
+            <img src="images/akatsuki.jpeg" alt="Description of the image" width="220" height="100">
+            <a href="https://science.nasa.gov/mission/akatsuki/" target="_blank" style="color: #4CAF50;">Akatsuki Mission at NASA</a>
+
+
+
+        </div>
+
+        <!-- Future Mission -->
+        <div class="mission">
+            <h2>NASA's DAVINCI+ (Planned for 2029)</h2>
+            <p>This mission aims to study Venus' atmosphere and determine its composition and origin.</p>
+            <img src="images/davinci.jpeg" alt="Description of the image" width="220" height="100">
+            <a href="https://science.nasa.gov/mission/davinci/" target="_blank" style="color: #4CAF50;">NASA's DAVINCI Mission</a>
+
+
+
+
+
+        </div>
+    </div>
+
+    <!-- Back to Home Link -->
+    <a href="index.html" class="back-button">Go back to Home</a>
+
+</body>
+</html>
+
+
+
+
+

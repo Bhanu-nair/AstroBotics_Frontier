@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mars Missions</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #1a1a2e;
+            color: #fff;
+            padding: 50px;
+            animation: fadeIn 1s ease;
+        }
+
+        h1 {
+            font-size: 50px;
+            color: #ffd700;
+            text-transform: uppercase;
+            animation: fadeIn 1s ease forwards;
+            animation-delay: 0.2s;
+        }
+        
+        .mission-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .mission {
+            background-color: #333;
+            padding: 20px;
+            border-radius: 10px;
+            transition: transform 0.3s ease, background-color 0.3s ease;
+            text-align: center;
+        }
+
+        .mission:hover {
+            background-color: #00f;
+            transform: scale(1.05);
+        }
+
+        .mission h2 {
+            font-size: 24px;
+            color: #ffd700;
+            transition: color 0.3s ease, transform 0.3s ease;
+        }
+
+        .mission h2:hover {
+            color: #00f;
+            transform: scale(0.95);
+        }
+
+        p {
+            font-size: 18px;
+            color: #ccc;
+        }
+
+        a {
+            color: #4caf50;
+            text-decoration: none;
+            font-size: 18px;
+            display: inline-block;
+            margin-top: 10px;
+            transition: color 0.3s ease;
+        }
+
+        a:hover {
+            color: #fff;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        /* Back to Home Button */
+        .back-button {
+            background-color: #00f;
+            color: white;
+            padding: 10px 20px;
+            margin: 20px auto;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            display: inline-block;
+        }
+
+        .back-button:hover {
+            background-color: #fff;
+            color: #00f;
+            transition: 0.3s;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 40px;
+            }
+            .mission h2 {
+                font-size: 20px;
+            }
+            p {
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Mars Missions</h1>
+
+    <div class="mission-container">
+        <!-- Past Missions -->
+        <div class="mission">
+            <h2>Viking 1 (1975)</h2>
+            <p>Viking 1 was the first successful landing on Mars, conducting experiments and sending back images of the surface.</p>
+            <img src="images/viking.jpg" alt="Description of the image" width="220" height="100">
+            <a href="https://www.jpl.nasa.gov/missions/viking-1/" target="_blank">viking-1 at JPL</a>
+
+
+            
+        </div>
+
+        <!-- Current Mission -->
+        <div class="mission">
+            <h2>Perseverance (2021-Present)</h2>
+            <p>Perseverance is currently exploring the Jezero Crater, searching for signs of ancient life and collecting rock samples.</p>
+            <img src="images/persevernce.jpeg" alt="Description of the image" width="220" height="100">
+            <a href="https://science.nasa.gov/mission/mars-2020-perseverance/" target="_blank">persevernce </a>
+            >
+
+            
+        </div>
+
+        <!-- Future Mission -->
+        <div class="mission">
+            <h2>Mars Sample Return (Planned for 2028)</h2>
+            <p>This mission aims to bring Martian soil samples back to Earth for detailed analysis.</p>
+            <img src="images/mars return.jpeg" alt="Description of the image" width="220" height="100">
+            <a href="https://science.nasa.gov/mission/mars-sample-return/" target="_blank">mars return mission </a>
+
+
+            
+            
+
+            
+        </div>
+    </div>
+
+    <!-- Back to Home Link -->
+    <a href="index.html" class="back-button">Go back to Home</a>
+
+</body>
+</html>
+
+
+
